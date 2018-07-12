@@ -1,6 +1,6 @@
 disqus: ## Your disqus_shortname, e.g. username
 uyan: ## Your uyan_id. e.g. 1234567
-livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
+livere: MTAyMC8zMjMyOC84ODg5 ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
 changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 gitment:
@@ -27,17 +27,17 @@ valine: ## https://valine.js.org
   pageSize: 10 ## Number of comments per page.
   guest_info: nick,mail,link ## Attributes of reviewers.
 
-google_search: true ## Use Google search, true/false.
+google_search: false ## Use Google search, true/false.
 baidu_search: false ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
-self_search: false ## Use a jQuery-based local search engine, true/false.
-google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
+self_search: true ## Use a jQuery-based local search engine, true/false.
+google_analytics: UA-74191197-1 ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 fancybox: true ## If you want to use fancybox please set the value to true.
-show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
-toc_number: true ## If you want to add list number to toc please set the value to true.
-shareto: false ## If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
+show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
+toc_number: false ## If you want to add list number to toc please set the value to true.
+shareto: true ## If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
 wordcount: false ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
@@ -48,17 +48,17 @@ canvas_nest:
   zIndex: ## The z-index property of the background, e.g. "-1"
   count: ## Quantity of lines, e.g. "150"
 donate:
-  enable: false ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  enable: true ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
   github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
-  alipay_qr: ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
-  wechat_qr: ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  alipay_qr: /img/AliPayQR.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+  wechat_qr: /img/WeChatQR.png ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
   paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
 post_copyright:
-  enable: false ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
-  author: ## Your author name, e.g. tufu9441
-  copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
+  enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
+  author: Xioyao Mu ## Your author name, e.g. tufu9441
+  copyright_text: The author owns the copyright, please indicate the source reproduced. ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
 
 menu:
   - page: home
@@ -70,6 +70,9 @@ menu:
   - page: about
     directory: about/
     icon: fa-user
+  - page: Timeline
+    directory: history/
+    icon: fa-book
   - page: rss
     directory: atom.xml
     icon: fa-rss
@@ -83,22 +86,26 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: ArcGIS知乎
+    url: http://zhihu.esrichina.com.cn/
+  - title: 菩提老王的葡萄架子
+    url: http://blog.newnaw.com/
+  - title: OopsLiu
+    url: http://oopsliu.com/
+  - title: UBUNTU SPACE
+    url: https://makeling.github.io/
+  - title: 慕名ArcGIS_CSDN
+    url: http://blog.csdn.net/kikitamoon
 
 timeline:
   - num: 1
-    word: 2014/06/12-Start
+    word: 2012年初 开始在CSDN尝试写点技术博客，感谢CSDN
   - num: 2
-    word: 2014/11/29-XXX
+    word: 2013-2015年 间断性地折腾域名、主机……    
   - num: 3
-    word: 2015/02/18-DDD
+    word: 2016年初 搬家到Github，网站主题 Hueman
   - num: 4
-    word: More
+    word: 2017年初 更换极简风主题 Maupassant
 
 # Static files
 js: js
